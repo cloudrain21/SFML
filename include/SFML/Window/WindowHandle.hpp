@@ -53,7 +53,7 @@ namespace sf
 
 #elif defined(SFML_SYSTEM_MACOS)
 
-    // Window handle is NSWindow (void*) on Mac OS X - Cocoa
+    // Window handle is NSWindow or NSView (void*) on Mac OS X - Cocoa
     typedef void* WindowHandle;
 
 #elif defined(SFML_SYSTEM_IOS)

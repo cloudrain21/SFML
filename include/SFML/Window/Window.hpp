@@ -99,7 +99,8 @@ public:
     /// depth-buffer bits, etc.
     ///
     /// \param handle   Platform-specific handle of the control (\a HWND on
-    ///                 Windows, \a %Window on Linux/FreeBSD, \a NSWindow on OS X)
+    ///                 Windows, \a %Window on Linux/FreeBSD, \a NSWindow
+    ///                 or \a NSView on OS X)
     /// \param settings Additional settings for the underlying OpenGL context
     ///
     ////////////////////////////////////////////////////////////
@@ -144,7 +145,8 @@ public:
     /// depth-buffer bits, etc.
     ///
     /// \param handle   Platform-specific handle of the control (\a HWND on
-    ///                 Windows, \a %Window on Linux/FreeBSD, \a NSWindow on OS X)
+    ///                 Windows, \a %Window on Linux/FreeBSD, \a NSWindow
+    ///                 or \a NSView on OS X)
     /// \param settings Additional settings for the underlying OpenGL context
     ///
     ////////////////////////////////////////////////////////////
@@ -460,7 +462,7 @@ public:
     /// very specific stuff to implement that SFML doesn't support,
     /// or implement a temporary workaround until a bug is fixed.
     /// The type is \a HWND on Windows, \a %Window on Linux/FreeBSD
-    /// and \a NSWindow on OS X.
+    /// and \a NSWindow or \a NSView on OS X.
     ///
     /// \return System handle of the window
     ///
