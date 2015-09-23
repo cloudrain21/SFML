@@ -1,0 +1,7 @@
+1. cmake .
+2. make
+3. sudo make install   (installed into /usr/local/lib, /Library/Framework, /usr/local/include)
+4. build examples
+   cd examples/sockets
+   g++ -c Sockets.cpp TCP.cpp UDP.cpp
+   g++ -o Sockets Sockets.o TCP.o UDP.o -L/usr/local/lib -lsfml-network -lsfml-system
